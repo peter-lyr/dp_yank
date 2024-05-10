@@ -49,7 +49,8 @@ function M.rela_head()
 end
 
 function M.cur_root()
-  local dir = CurRoot[B.get_proj_root()]
+  local cur_root = B.get_cur_root()
+  local dir = cur_root[B.get_proj_root()]
   if dir then
     M._yank(dir)
   end
